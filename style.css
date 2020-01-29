@@ -1,0 +1,11 @@
+#starfield{
+    position: absolute;
+}
+
+#romulan{
+    position: relative;
+}
+
+.cloaked{
+    display: none;
+}
