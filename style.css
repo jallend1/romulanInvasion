@@ -7,5 +7,10 @@
 }
 
 .cloaked{
-    display: none;
+    opacity: 0;
+}
+
+.uncloaked{
+    opacity: 1;
+    transition: opacity 2s;
 }

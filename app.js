@@ -19,6 +19,7 @@ gameWindow.addEventListener('click', e => {
     if((xClick > romulanLocation.xAxis) && (xClick < romulanLocation.xAxis + romulanLocation.shipWidth)){
         if((yClick > romulanLocation.yAxis) && (yClick < (romulanLocation.yAxis + (romulanLocation.shipWidth * 0.83)))){
             romulan.classList.remove('cloaked');
+            romulan.classList.add('uncloaked');
         }
     }
 });
