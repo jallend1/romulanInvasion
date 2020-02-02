@@ -1,9 +1,35 @@
+body{
+    background: black;
+    color: white;
+}
+
+#wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr .1fr 1fr;
+}
+
+h1 span{
+    color: #ff9900;
+}
+
+#gamewindow{
+    position: relative;
+    margin: 5em auto;
+}
+
 #starfield{
     position: absolute;
+    border: 5px solid blue;
 }
 
 #romulan{
-    position: relative;
+    position: absolute;
 }
 
 .cloaked{
@@ -13,4 +39,26 @@
 .uncloaked{
     opacity: 1;
     transition: opacity 2s;
+}
+
+.empty{
+    background:#ff9900;
+    width: 100%;
+}
+
+#start{
+    background: #cc99cc;
+    width: 95%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#subtitle{
+    box-sizing: border-box;
+    padding-top: 0px;
+    width: 150px;
+    border-radius: 0 50px 50px 0;
+    background: #ff9900;
+    color:  black;
+    margin: auto;
+    height: 100%;
 }

@@ -12,14 +12,13 @@ romulan.style.top = `${romulanLocation.yAxis}px`;
 romulan.style.width = `${romulanLocation.shipWidth}px`;
 
 gameWindow.addEventListener('click', e => {
-    const xClick = e.offsetX;
-    const yClick = e.offsetY;
-    console.log(xClick, yClick);
-    console.log(romulanLocation);
-    if((xClick > romulanLocation.xAxis) && (xClick < romulanLocation.xAxis + romulanLocation.shipWidth)){
-        if((yClick > romulanLocation.yAxis) && (yClick < (romulanLocation.yAxis + (romulanLocation.shipWidth * 0.83)))){
-            romulan.classList.remove('cloaked');
-            romulan.classList.add('uncloaked');
-        }
+    if(e.target.id === 'romulan'){
+        romulan.classList.remove('cloaked');
+        romulan.classList.add('uncloaked');    
     }
 });
+
+window.addEventListener('keypress', e => {
+    romulan.classList.toggle('cloaked');
+    romulan.classList.toggle('uncloaked');
+})
