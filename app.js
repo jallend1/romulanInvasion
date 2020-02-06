@@ -18,7 +18,7 @@ gameWindow.addEventListener('click', e => {
     }
 });
 
-window.addEventListener('keypress', e => {
+window.addEventListener('keypress', e => {                  // Manually reveal the ship for testing
     romulan.classList.toggle('cloaked');
     romulan.classList.toggle('uncloaked');
 })
